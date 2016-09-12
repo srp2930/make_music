@@ -24,7 +24,6 @@ $(document).ready(function(){
               popularity: track.popularity,
               uri: track.uri }});
     tracks(0,5)
-    console.log(data);
   });
 
   $('#all-tracks').click(function(){
