@@ -2,22 +2,27 @@
 <html>
   <head>
     <title>Daddy Kane</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css" media="screen">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body background="images/big-daddy-kane.jpg">
     <div class="kane">
-      <h1>Big Daddy Kane</h1>
+      <div class="titular">
+        <h1>BIG DADDY KANE</h1>
+      </div>
       <h2>This is a page celebrating Big Daddy Kane's birthday. Below you will find a list of his top 5 tracks.</h2>
       <div id="five-tracks">
-        <ul class="list">
-        </ul>
+        <table id='trackList' class="center">
+          <tr>
+            <th id="name">Track Name</th>
+            <th>Album name</th>
+            <th>Play track</th>
+          </tr>
+        </table>
       </div>
-      <br>
       <div class="wrapper">
-        <button type="button" class="btn btn-primary btn-xl" id='all-tracks'>Get top 10!</button>
+        <button type="button" class="btn" id='all-tracks'>Get top 10!</button>
       </div>
       <footer>Sophie Rimington-Pounder <span id='date'></span></footer>
     </div>

@@ -1,17 +1,25 @@
 h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: Montserrat,sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
+  color: #fff;
+  padding-top: 50px;
 }
-
+.titular {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #F8333C, 0 0 30px #F8333C, 0 0 40px #F8333C, 0 0 50px #F8333C, 0 0 75px #F8333C;
+  letter-spacing: 5px;
+}
 h2 {
   font-size: 17px;
   text-align: center;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Circular,Helvetica,Arial,sans-serif;
+  color: white;
+  padding-top: 20px;
+  font-weight: 400;
+  padding-bottom: 20px;
 }
-
 .btn {
   border: none;
   border-radius: 300px;
@@ -23,6 +31,7 @@ h2 {
   width:190px;
   height:54px;
   font-size: 25px;
+  color: white;
 }
 .btn:hover{
     background: #c62830;
@@ -30,7 +39,59 @@ h2 {
 .wrapper {
   text-align: center;
 }
-
 footer {
   text-align: right;
+}
+iframe {
+  width: 300px;
+  height: 80px
+}
+#five-tracks {
+  width: 800px ;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+table {
+  width: 800px;
+  text-align: center;
+  display: table-cell;
+  color: white;
+  border-collapse:collapse;
+  border-spacing:0;
+  border-bottom-width:5px;
+}
+table td{
+  font-family: Circular,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 0px;
+  overflow: hidden;
+  word-break: normal;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  text-shadow: 1px 2px 3px #3d3d3d;
+  line-height: 20px
+}
+table th{
+  text-align: center;
+  font-family: Circular,Helvetica,Arial,sans-serif;
+  font-size:16px;
+  font-weight:normal;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:0px;
+  overflow:hidden;
+  word-break:normal;
+  border-top-width:4px;
+  border-bottom-width:4px;
+  text-shadow: 1px 2px 3px #3d3d3d;
+}
+table th#name{
+  width: 293px;
+}
+html {
+  background-position: center center;
+  background-repeat: no-repeat;
 }

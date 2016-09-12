@@ -1,23 +1,30 @@
 $(document).ready(function(){
   var music;
-  var today = new Date;
   var halt = false;
+  var today = new Date;
   document.getElementById('date').innerHTML= today.toLocaleDateString();
 
-  function tracks(a,b) {
-    $.each(music.slice(a,b), function(key, value){
-      $('#five-tracks .list').append(
-        $('<li>').append(
-          $('<h3 class=tracks>').append(
-            value.name + ' '+value.popularity
-          )))
-    });
+  function tracks(element1,element2) {
+    $.each(music.slice(element1,element2), function(key, value){
+      $('#trackList').append(
+        $('<tr>').append(
+          $('<td>').text(value.name),
+          $('<td>').text(value.album),
+          $('<td>').append(
+          '<iframe src="https://embed.spotify.com/?uri=' + value.uri + '" frameborder="0" allowtransparency="true"></iframe>')
+        )
+      )
+    })
   }
 
   $.get('https://api.spotify.com/v1/artists/6futYSDVulYR2PktBjTB5W/top-tracks?country=GB', function(data) {
     music = data.tracks.map(function(track) {
-      return {name: track.name, album: track.name.album, popularity: track.popularity }});
+      return {name: track.name,
+              album: track.album.name,
+              popularity: track.popularity,
+              uri: track.uri }});
     tracks(0,5)
+    console.log(data);
   });
 
   $('#all-tracks').click(function(){
