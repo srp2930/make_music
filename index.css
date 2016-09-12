@@ -1,0 +1,36 @@
+h1 {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Montserrat,sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 17px;
+  text-align: center;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.btn {
+  border: none;
+  border-radius: 300px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #F8333C;
+  border-color: #F8333C;
+  white-space: nowrap;
+  width:190px;
+  height:54px;
+  font-size: 25px;
+}
+.btn:hover{
+    background: #c62830;
+}
+.wrapper {
+  text-align: center;
+}
+
+footer {
+  text-align: right;
+}
